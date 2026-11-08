@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Techfest 2026, IIT Bombay: An Aetherial Renaissance</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;1,600&family=Outfit:wght@400;600&display=swap">
+<style>
+:root{--bg:#eef1ff;--bg2:#dde4ff;--tx:#0c1445;--mut:#44508a;--gold:#85580a;--hi:#d9a53a;--aeth:#00867a;--line:rgba(12,20,69,.22);--card:rgba(255,255,255,.55);--glow:rgba(0,150,140,.2);--bb:#0c1445;--bt:#f6e7bd;--h:"Cormorant Garamond",Georgia,serif;--b:"Outfit",system-ui,sans-serif;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#070d34;--bg2:#0e1a55;--tx:#eef0ff;--mut:#a8b3e6;--gold:#e8b94f;--hi:#fff4cf;--aeth:#5ff0da;--line:rgba(232,185,79,.3);--card:rgba(255,255,255,.05);--glow:rgba(95,240,218,.16);--bb:#e8b94f;--bt:#1a1200}}
+:root[data-theme="dark"]{--bg:#070d34;--bg2:#0e1a55;--tx:#eef0ff;--mut:#a8b3e6;--gold:#e8b94f;--hi:#fff4cf;--aeth:#5ff0da;--line:rgba(232,185,79,.3);--card:rgba(255,255,255,.05);--glow:rgba(95,240,218,.16);--bb:#e8b94f;--bt:#1a1200}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 70px)}
+body{margin:0;font:400 1.1rem/1.6 var(--b);color:var(--tx);background:var(--bg);overflow-x:clip}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:40}
+#aur{position:fixed;inset:0;z-index:-1;background:radial-gradient(520px circle at var(--mx,72%) var(--my,22%),var(--glow),transparent 62%),linear-gradient(var(--bg2),var(--bg) 70%)}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+a{color:inherit}
+.wrap{width:min(1180px,100% - 2.5rem);margin-inline:auto}
+.hd{position:fixed;top:env(safe-area-inset-top,0px);left:0;right:0;z-index:30;transition:transform .4s;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);background:color-mix(in srgb,var(--bg) 70%,transparent);border-bottom:1px solid var(--line)}
+.hd.h{transform:translateY(-110%)}
+.hd .wrap{display:flex;align-items:center;gap:1.5rem;height:62px}
+.brand{font:600 1.6rem var(--h);text-decoration:none;margin-right:auto}.brand small{font:400 .9rem var(--b);color:var(--mut);margin-left:.5rem}
+nav{display:flex;gap:1.5rem}nav a{text-decoration:none;color:var(--mut)}nav a:hover{color:var(--tx)}
+.btn{display:inline-block;font:600 1rem var(--b);text-decoration:none;color:var(--bt);background:var(--bb);padding:.85rem 1.5rem;border:1px solid var(--gold);transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-3px);box-shadow:0 8px 0 -2px var(--gold)}
+.btn.g{background:none;color:var(--tx)}
+.hero{min-height:100vh;display:flex;align-items:center;padding:6rem 0 3rem}
+.hero .wrap{display:grid;gap:2rem;align-items:center}
+h1,h2{font-family:var(--h);font-weight:600;line-height:.95;margin:0}
+h1{font-size:clamp(4.4rem,15vw,11rem);letter-spacing:-.02em;background:linear-gradient(100deg,var(--gold) 20%,var(--hi) 45%,var(--gold) 70%) 0 0/200% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:sh 7s linear infinite;padding-bottom:.08em}
+@keyframes sh{to{background-position:-200% 0}}
+.tag{font:italic 600 clamp(1.8rem,4.2vw,3rem)/1.1 var(--h);margin:.4rem 0 1rem}
+.lead{color:var(--mut);max-width:30rem;margin:0 0 1.4rem}
+.when{font-weight:600;margin:0 0 1rem}
+.cd{display:flex;gap:.6rem;margin:0 0 1.6rem}
+.cd div{min-width:4.4rem;padding:.5rem .6rem;border:1px solid var(--line);background:var(--card);text-align:center}
+.cd b{display:block;font:600 2.1rem/1 var(--h);color:var(--gold)}.cd span{font-size:.8rem;color:var(--mut)}
+.row{display:flex;flex-wrap:wrap;gap:.8rem}
+.art{position:relative}
+#astro{display:block;width:100%;max-width:640px;margin:auto;color:var(--gold);will-change:transform}
+#astro *{fill:none;stroke:currentColor;stroke-width:1.2}
+#astro .f{fill:var(--gold);stroke:none}
+#astro .orb{fill:url(#ae);stroke:none}
+#astro .hit{fill:rgba(0,0,0,0);stroke:none}
+#astro .nd{cursor:pointer}#astro .nd .f{transform-box:fill-box;transform-origin:center;transition:transform .3s}#astro .nd:hover .f{transform:scale(1.8)}
+#astro .ins{font:600 17px var(--h);fill:var(--gold);stroke:none;letter-spacing:6px}
+#astro .dr{stroke-dasharray:1;animation:dw 2.8s ease-out both}
+@keyframes dw{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+.pulse{animation:pu 4s ease-in-out infinite alternate;transform-origin:center}@keyframes pu{to{transform:scale(1.15)}}
+section{padding:clamp(3.5rem,8vw,6.5rem) 0}
+h2{font-size:clamp(2.4rem,6vw,4.4rem);margin-bottom:1rem}
+.sub{color:var(--mut);max-width:36rem;margin:0 0 2.2rem}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(9.5rem,1fr));border-block:1px solid var(--line)}
+.facts div{padding:1.6rem 1.1rem;border-left:1px solid var(--line)}.facts div:first-child{border-left:0}
+.n{display:block;font:italic 600 clamp(2.3rem,5vw,3.4rem)/1 var(--h);color:var(--gold)}
+.facts span{color:var(--mut);font-size:.95rem}
+.fols{display:flex;gap:.8rem;height:min(34rem,78vh)}
+.fol{position:relative;flex:1;min-width:0;padding:1.2rem;overflow:hidden;cursor:pointer;border:1px solid var(--line);background:var(--card);transition:flex .7s cubic-bezier(.2,.8,.2,1),border-color .3s}
+.fol.on{flex:4;border-color:var(--gold);cursor:default}
+.sk{width:112px;display:block;stroke:var(--gold);fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.sk *{opacity:.5;transition:opacity .4s}.on .sk *{opacity:1;stroke-dasharray:var(--l);animation:dw2 1.7s ease both}
+@keyframes dw2{from{stroke-dashoffset:var(--l)}to{stroke-dashoffset:0}}
+.vt{position:absolute;left:1.2rem;bottom:1.2rem;writing-mode:vertical-rl;transform:rotate(180deg);font:italic 600 1.9rem var(--h);white-space:nowrap;transition:opacity .3s}.on .vt{opacity:0}
+.bd{position:absolute;left:1.4rem;right:1.4rem;bottom:1.2rem;opacity:0;transform:translateY(22px);pointer-events:none;transition:opacity .5s,transform .6s}
+.on .bd{opacity:1;transform:none;pointer-events:auto;transition-delay:.3s}
+.bd h3{font:600 clamp(2rem,4vw,3rem)/1 var(--h);margin:0 0 .6rem}.bd p{margin:0 0 .8rem;color:var(--mut);max-width:34rem}.bd a{color:var(--gold);font-weight:600}
+.tl{position:relative;max-width:50rem;--p:0px}
+.tl::before,.tl::after{content:"";position:absolute;left:7px;top:6px;width:2px}.tl::before{bottom:6px;background:var(--line)}.tl::after{height:var(--p);background:var(--gold);box-shadow:0 0 14px var(--gold)}
+.ti{position:relative;display:grid;grid-template-columns:7.5rem 1fr;gap:1rem;padding-left:2.4rem;margin-bottom:2.2rem;opacity:.4;transition:opacity .5s}
+.ti::before{content:"";position:absolute;left:0;top:.7rem;width:16px;height:16px;border-radius:50%;border:2px solid var(--gold);background:var(--bg);transition:background .4s,box-shadow .4s}
+.ti.on{opacity:1}.ti.on::before{background:var(--gold);box-shadow:0 0 18px var(--gold)}
+.yr{font:italic 600 clamp(1.9rem,4.5vw,2.8rem)/1.1 var(--h);color:var(--gold)}.ti p{margin:0;color:var(--mut)}.ti b{color:var(--tx);font-weight:600}
+.join{text-align:center;border:1px solid var(--gold);background:var(--card);padding:clamp(2rem,6vw,4.5rem) 1.5rem}
+.join h2{max-width:16ch;margin-inline:auto}.join .sub{margin-inline:auto}.join .row{justify-content:center}
+footer{padding:2rem 0 3rem;color:var(--mut);font-size:.95rem;text-align:center}
+.rv{clip-path:inset(0 0 100% 0);opacity:0;transition:clip-path 1s cubic-bezier(.2,.8,.2,1),opacity .6s}.rv.in{clip-path:inset(-20px);opacity:1}
+@media(min-width:900px){.hero .wrap{grid-template-columns:1.05fr .95fr}}
+@media(max-width:899px){.art{order:-1;max-width:420px;margin:0 auto}.hero{padding-top:5.5rem}}
+@media(max-width:860px){nav{display:none}.fols{flex-direction:column;height:auto}.fol{flex:none;min-height:5.6rem;transition:min-height .6s cubic-bezier(.2,.8,.2,1),border-color .3s}.fol.on{min-height:25rem}.sk{width:64px}.on .sk{width:104px}.vt{writing-mode:horizontal-tb;transform:none;left:6rem;bottom:auto;top:1.6rem}.ti{grid-template-columns:1fr;gap:.2rem}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition-duration:.01s!important;scroll-behavior:auto!important}h1{color:var(--gold);background:none}}
+</style>
+</head>
+<body>
+<div id="aur"></div>
+<header class="hd" id="hd"><div class="wrap">
+<a class="brand" href="#top">Techfest<small>IIT Bombay</small></a>
+<nav aria-label="Primary"><a href="#folios">What’s on</a><a href="#story">Heritage</a><a href="#join">Join</a></nav>
+<a class="btn" href="https://techfest.org/competitions" target="_blank" rel="noopener">Register</a>
+</div></header>
+
+<main id="top">
+<div class="hero"><div class="wrap">
+<div>
+<h1>Techfest</h1>
+<p class="tag">An Aetherial Renaissance</p>
+<p class="lead">Where heritage meets futuristic technology. Asia’s largest science and technology festival turns thirty.</p>
+<p class="when">16–18 December 2026, IIT Bombay, Mumbai</p>
+<div class="cd" id="cd" role="timer" aria-label="Time until Techfest begins"><div><b>0</b><span>days</span></div><div><b>0</b><span>hours</span></div><div><b>0</b><span>minutes</span></div><div><b>0</b><span>seconds</span></div></div>
+<div class="row"><a class="btn" href="https://techfest.org/competitions" target="_blank" rel="noopener">Register for free</a><a class="btn g" href="#folios">See what’s on</a></div>
+</div>
+<div class="art">
+<svg id="astro" viewBox="-300 -300 600 600" aria-hidden="true">
+<defs><radialGradient id="ae"><stop offset="0" style="stop-color:var(--aeth)" stop-opacity=".95"/><stop offset=".45" style="stop-color:var(--aeth)" stop-opacity=".25"/><stop offset="1" style="stop-color:var(--aeth)" stop-opacity="0"/></radialGradient><path id="tp" d="M0-232A232 232 0 1 1-.01-232"/></defs>
+<circle class="orb pulse" r="190"/>
+<circle r="288" stroke-dasharray="1.5 10.94" opacity=".55"/>
+<g id="g1"><circle class="dr" pathLength="1" r="268"/><text class="ins"><textPath href="#tp" textLength="1440">AETHERIAL RENAISSANCE  ·  TECHFEST XXX  ·  IIT BOMBAY  ·  16–18 DECEMBER 2026  ·  </textPath></text></g>
+<g id="g2"><circle r="200" stroke-dasharray="3 9" opacity=".8"/></g>
+<g id="g3"><polygon id="star" class="dr" pathLength="1"/></g>
+<g id="g4"><circle class="dr" pathLength="1" r="105"/><rect class="dr" pathLength="1" x="-74" y="-74" width="148" height="148"/></g>
+<circle class="orb" r="46"/><circle class="f" r="7"/>
+</svg>
+</div>
+</div></div>
+
+<section style="padding-block:0"><div class="wrap"><div class="facts" id="facts">
+<div><span class="n" data-to="30" data-suf="th">30th</span><span>edition of the festival</span></div>
+<div><span class="n" data-to="300" data-suf="+">300+</span><span>events across three days</span></div>
+<div><span class="n" data-to="180000" data-suf="+">180,000+</span><span>visitors on campus</span></div>
+<div><span class="n" data-to="1" data-pre="₹" data-suf=" crore+">₹1 crore+</span><span>in competition prizes</span></div>
+<div><span class="n" data-to="25" data-suf="+">25+</span><span>workshop domains</span></div>
+</div></div></section>
+
+<section id="folios"><div class="wrap">
+<h2 class="rv">Five folios of the festival</h2>
+<p class="sub rv">Hover, tap or tab through each one. The five points of the star in the hero open them too.</p>
+<div class="fols" id="fols">
+<article class="fol" tabindex="0"><svg class="sk" viewBox="0 0 120 120" aria-hidden="true"><path d="M40 22h40v22q0 24-20 30q-20-6-20-30z"/><path d="M40 30H24q0 22 18 26"/><path d="M80 30h16q0 22-18 26"/><path d="M60 74v18M42 104h36M48 92h24"/></svg><div class="vt" aria-hidden="true">Competitions</div>
+<div class="bd"><h3>Competitions</h3><p>National-level contests in robotics, coding, quantitative reasoning, AI and more. Registration is free, and the prize pool across the festival tops ₹1 crore.</p><a href="https://techfest.org/competitions" target="_blank" rel="noopener">Browse competitions on techfest.org</a></div></article>
+<article class="fol" tabindex="0"><svg class="sk" viewBox="0 0 120 120" aria-hidden="true"><path id="gear"/><circle cx="60" cy="60" r="13"/><circle cx="60" cy="60" r="4"/></svg><div class="vt" aria-hidden="true">Robowars</div>
+<div class="bd"><h3>Robowars</h3><p>Student-built fighting robots, metal against metal in a caged arena. One of the loudest, most crowded corners of the whole festival.</p><a href="https://techfest.org/competitions" target="_blank" rel="noopener">Find Robowars on techfest.org</a></div></article>
+<article class="fol" tabindex="0"><svg class="sk" viewBox="0 0 120 120" aria-hidden="true"><polygon points="60,18 98,86 22,86"/><path d="M4 70L44 62"/><path d="M70 56L112 38M74 66L116 62M78 76L114 88"/></svg><div class="vt" aria-hidden="true">Exhibitions</div>
+<div class="bd"><h3>Exhibitions</h3><p>Technology showcases and innovation displays spread across the campus, from new projects to products you can walk up to and try.</p><a href="https://techfest.org" target="_blank" rel="noopener">Explore techfest.org</a></div></article>
+<article class="fol" tabindex="0"><svg class="sk" viewBox="0 0 120 120" aria-hidden="true"><circle cx="34" cy="60" r="9"/><path d="M54 44Q70 60 54 76"/><path d="M66 32Q92 60 66 88"/><path d="M78 20Q114 60 78 100"/></svg><div class="vt" aria-hidden="true">Lectures</div>
+<div class="bd"><h3>Lectures</h3><p>Talks from leading minds. Past speakers include A.P.J. Abdul Kalam, Vint Cerf and the 14th Dalai Lama.</p><a href="https://techfest.org" target="_blank" rel="noopener">Explore techfest.org</a></div></article>
+<article class="fol" tabindex="0"><svg class="sk" viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="20" r="6"/><path d="M60 26L34 104M60 26L86 104M45 70h30"/><path d="M20 104Q60 78 100 104"/></svg><div class="vt" aria-hidden="true">Workshops</div>
+<div class="bd"><h3>Workshops</h3><p>Hands-on sessions across 25+ domains, from AI and cybersecurity to entrepreneurship and AutoCAD, with an IIT Bombay certificate at the end.</p><a href="https://techfest.org/workshops" target="_blank" rel="noopener">Book a workshop on techfest.org</a></div></article>
+</div>
+</div></section>
+
+<section id="story"><div class="wrap">
+<h2 class="rv">From the first edition to the thirtieth</h2>
+<p class="sub rv">Techfest began as a student idea in 1998. The renaissance theme is a nod to all the craft that came before the screens.</p>
+<div class="tl" id="tl">
+<div class="ti"><div class="yr">1998</div><p><b>The first Techfest.</b> It set the shape the festival still has: competitions, lectures, workshops and exhibitions.</p></div>
+<div class="ti"><div class="yr">2008–09</div><p><b>iNexus goes abroad.</b> The Nexus programme reached Sri Lanka, the UAE and Denmark.</p></div>
+<div class="ti"><div class="yr">2009–10</div><p><b>Scintillations lights up the night</b> with evening exhibitions and shows.</p></div>
+<div class="ti"><div class="yr">2014–15</div><p><b>Lectures by A.P.J. Abdul Kalam, Bjarne Stroustrup and Vint Cerf,</b> with a footfall of about 1.45 lakh.</p></div>
+<div class="ti"><div class="yr">2018</div><p><b>A Guinness World Record</b> for the most LED lights lit simultaneously, set with SoULS, IIT Bombay.</p></div>
+<div class="ti"><div class="yr">2026</div><p><b>The 30th edition, An Aetherial Renaissance.</b> Heritage meets futuristic technology, 16–18 December.</p></div>
+</div>
+</div></section>
+
+<section id="join"><div class="wrap"><div class="join">
+<h2>Take your seat in the Renaissance</h2>
+<p class="sub">Competition registration is free. On-campus accommodation is available from 15 December, 6 am, to 19 December, 10 am.</p>
+<div class="row"><a class="btn" href="https://techfest.org/competitions" target="_blank" rel="noopener">Register for competitions</a><a class="btn g" href="https://techfest.org/workshops" target="_blank" rel="noopener">Book a workshop</a><a class="btn g" href="https://techfest.org/accommodations" target="_blank" rel="noopener">Plan your stay</a></div>
+</div></div></section>
+</main>
+<footer><div class="wrap">An unofficial concept design for Techfest, IIT Bombay. Check dates, prices and registration on <a href="https://techfest.org" target="_blank" rel="noopener">techfest.org</a>.</div></footer>
+
+<script>
+(function(){
+var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+function $(s){return document.querySelector(s)}function $$(s){return [].slice.call(document.querySelectorAll(s))}
+var NS='http://www.w3.org/2000/svg';
+function el(t,a,p){var e=document.createElementNS(NS,t);for(var k in a)e.setAttribute(k,a[k]);p.appendChild(e);return e}
+// gear path
+var gd='';for(var i=0;i<10;i++){var a=i*2*Math.PI/10,s=Math.PI/22;[[a-s*1.6,30],[a-s*.8,42],[a+s*.8,42],[a+s*1.6,30]].forEach(function(p,j){gd+=(gd?'L':'M')+(60+Math.cos(p[0])*p[1]).toFixed(1)+' '+(60+Math.sin(p[0])*p[1]).toFixed(1)})}
+$('#gear').setAttribute('d',gd+'Z');
+$$('.sk *').forEach(function(e){e.style.setProperty('--l',Math.ceil(e.getTotalLength())+1)});
+// astrolabe
+var g2=$('#g2'),g3=$('#g3'),fols=$$('.fol');
+function open(i){fols.forEach(function(f,j){f.classList.toggle('on',j===i)})}
+for(i=0;i<12;i++){a=i*Math.PI/6;el('circle',{cx:Math.cos(a)*200,cy:Math.sin(a)*200,r:i%3?3.5:6,class:i%3?'':'f'},g2)}
+var pts=[];for(i=0;i<5;i++){a=-Math.PI/2+i*2*Math.PI/5;pts.push([Math.cos(a)*150,Math.sin(a)*150])}
+$('#star').setAttribute('points',[0,2,4,1,3].map(function(k){return pts[k].join(',')}).join(' '));
+pts.forEach(function(p,i){var n=el('g',{class:'nd'},g3);el('circle',{cx:p[0],cy:p[1],r:20,class:'hit'},n);el('circle',{cx:p[0],cy:p[1],r:7,class:'f'},n);n.addEventListener('click',function(){open(i);$('#folios').scrollIntoView({behavior:reduce?'auto':'smooth'})})});
+var G=[$('#g1'),g2,g3,$('#g4')],as=$('#astro'),t0=performance.now(),px=0,spx=0,sy=0,on=false;
+function spin(now){var t=(now-t0)/1000;spx+=(px-spx)*.06;
+  G[0].setAttribute('transform','rotate('+(t*2+sy*.04+spx*8)+')');
+  G[1].setAttribute('transform','rotate('+(-t*4-sy*.07-spx*16)+')');
+  G[2].setAttribute('transform','rotate('+(t*6+sy*.1+spx*28)+')');
+  G[3].setAttribute('transform','rotate('+(-t*3-sy*.05)+')');
+  as.style.transform='translateY('+(sy*.1)+'px) scale('+(1+sy*.0003)+')';
+  if(!reduce&&sy<innerHeight*1.3)requestAnimationFrame(spin);else on=false}
+function go(){if(!on){on=true;requestAnimationFrame(spin)}}
+go();
+// pointer glow + parallax
+addEventListener('pointermove',function(e){document.documentElement.style.setProperty('--mx',e.clientX+'px');document.documentElement.style.setProperty('--my',e.clientY+'px');px=(e.clientX/innerWidth-.5)*2});
+// header + timeline + scroll
+var hd=$('#hd'),tl=$('#tl'),ti=$$('.ti'),ly=0;
+function onS(){sy=scrollY;hd.classList.toggle('h',sy>ly&&sy>200);ly=sy;go();
+  var r=tl.getBoundingClientRect(),mid=innerHeight*.55;tl.style.setProperty('--p',Math.max(0,Math.min(r.height-12,mid-r.top))+'px');
+  ti.forEach(function(e){e.classList.toggle('on',e.getBoundingClientRect().top<mid)})}
+addEventListener('scroll',onS,{passive:true});addEventListener('resize',onS);onS();
+// folios
+fols.forEach(function(f,i){f.addEventListener('mouseenter',function(){if(matchMedia('(hover:hover)').matches)open(i)});f.addEventListener('click',function(){open(i)});f.addEventListener('focusin',function(){open(i)})});
+// observers
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;e.target.classList.add('in');if(e.target.id==='fols'&&!$('.fol.on'))open(0);io.unobserve(e.target)})},{threshold:.2});
+$$('.rv').forEach(function(e){io.observe(e)});io.observe($('#fols'));
+var co=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;co.unobserve(e.target);var n=e.target,to=+n.dataset.to,pre=n.dataset.pre||'',suf=n.dataset.suf||'',s=performance.now();(function f(now){var p=reduce?1:Math.min(1,(now-s)/1600),v=Math.round(to*(1-Math.pow(1-p,3)));n.textContent=pre+v.toLocaleString('en-US')+suf;if(p<1)requestAnimationFrame(f)})(s)})},{threshold:.6});
+$$('.n').forEach(function(e){co.observe(e)});
+// countdown to 16 Dec 2026, 00:00 IST
+var T=Date.UTC(2026,11,15,18,30),cb=$$('#cd b');
+function cd(){var d=Math.max(0,T-Date.now()),v=[Math.floor(d/864e5),Math.floor(d/36e5)%24,Math.floor(d/6e4)%60,Math.floor(d/1e3)%60];cb.forEach(function(b,i){b.textContent=v[i]})}
+cd();setInterval(cd,1000);
+})();
+</script>
+</body>
+</html>
